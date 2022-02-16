@@ -1,0 +1,8 @@
+@import "styles/palette";
+
+.banner {
+  background: center / cover;
+  color: $white;
+  object-fit: contain;
+  height: 450px;
+}
