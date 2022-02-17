@@ -51,6 +51,12 @@
     padding: 0.5rem 2rem;
     margin-right: 1rem;
     background-color: $primaryRgba;
+
+    &:hover {
+      color: $netflixBlack;
+      background-color: $grey;
+      transition: all 0.2s ease-in-out;
+    }
   }
 }
 
