@@ -7,7 +7,7 @@ import style from "./style.module.scss"
 const Banner = () => {
 
     return (
-        <header className={style.banner} style={{backgroundImage: `url(${images.Banner})`}}>
+        <header className={style.banner} style={{backgroundImage: `url(${images.BlackBanner})`}}>
             <div className={style.banner_contents}>
                 <h1 className={style.banner_title}>Movie title</h1>
                 <div className={style.banner_button_wrapper}>
@@ -20,7 +20,7 @@ const Banner = () => {
                 </h1>
             </div>
 
-            <div className={style.banner__fade_bottom}/>
+            <div className={style.banner__fade_bottom} />
         </header>
     )
 }
