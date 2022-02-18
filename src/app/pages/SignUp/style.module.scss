@@ -1,0 +1,77 @@
+@import "styles/palette";
+
+.signup_screen {
+  max-width: 400px;
+  padding: 70px;
+  margin: 0 auto;
+  background-color: $opacityRgba3;
+
+  & > form {
+    display: grid;
+    flex-direction: column;
+
+    & > h1 {
+      text-align: left;
+      margin-bottom: 32px;
+    }
+
+    & > input {
+      height: 40px;
+      margin-bottom: 14px;
+      border-radius: 5px;
+      border: none;
+      padding: 5px 15px;
+    }
+
+    & > button {
+      padding: 16px 20px;
+      font-size: 1rem;
+      color: $white;
+      border-radius: 5px;
+      background-color: $orange;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    &> h4{
+      margin-top: 20px;
+    }
+  }
+
+  &_link {
+    cursor: pointer;
+
+    &__disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    &__grey {
+      color: $darkGrey;
+      margin-right: 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

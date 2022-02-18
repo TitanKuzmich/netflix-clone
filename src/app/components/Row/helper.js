@@ -3,7 +3,8 @@ import config from "lib/config"
 export const rowsData = [
     {
         title: "NETFLIX ORIGINALS",
-        url: config.paths.fetchNetflixOriginals
+        url: config.paths.fetchNetflixOriginals,
+        isLargeRow: true
     },
     {
         title: "Trending Now",

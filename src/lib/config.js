@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY
+const API_KEY = "f81980ff410e46f422d64ddf3a56dddd"
 
 const config = {
     tmdbBaseUrl: 'https://api.themoviedb.org/t/p/originals',
