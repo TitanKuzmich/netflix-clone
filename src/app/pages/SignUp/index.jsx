@@ -22,7 +22,6 @@ const SignUp = () => {
             )
 
             setLoading(false)
-            console.log(user)
         } catch (e) {
             alert(e.message)
             setLoading(false)
@@ -40,7 +39,6 @@ const SignUp = () => {
             )
 
             setLoading(false)
-            console.log(user)
         } catch (e) {
             alert(e.message)
             setLoading(false)

@@ -8,11 +8,11 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-top: 8%;
+    padding: 8% 20px 0 20px;
     max-width: 800px;
   }
 
-  & > h1 {
+  h1 {
     font-size: 60px;
     font-weight: 400;
     border-bottom: 1px solid $lightGray;
@@ -21,17 +21,19 @@
 
   &_info {
     display: flex;
+    width: 100%;
 
     img {
-      height: 100px;
+      height: 130px;
+      margin-right: 20px;
     }
   }
 
   &_details {
-    & > h2 {
+    h2 {
       font-size: 15px;
       padding: 15px 20px 15px 15px;
-      background-color: $grey;
+      background-color: $darkGrey;
     }
   }
 
@@ -48,9 +50,10 @@
   }
 
   &_plans {
-    & > h3 {
+    h3 {
+      width: 100%;
       border-bottom: 1px solid $lightGray;
-      padding-bottom: 10px;
+      padding: 10px 0;
     }
   }
 }

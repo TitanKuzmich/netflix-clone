@@ -16,14 +16,11 @@ const Banner = () => {
 
     const getMovies = async () => {
         const result = await API.get(config.paths.fetchNetflixOriginals)
-
         setMovie(
             result.data.results[
                 Math.floor(Math.random() * result.data.results.length - 1)
                 ]
         )
-
-        console.log(movie)
     }
 
     useEffect(() => {
@@ -31,7 +28,7 @@ const Banner = () => {
     }, [])
 
     return (
-        <header className={style.banner} style={{backgroundImage: 'url(`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`)'}}>
+        <header className={style.banner} style={{backgroundImage: `url(https://image.tmdb.org/t/p/original${movie?.backdrop_path})`}}>
             <div className={style.banner_contents}>
                 <h1 className={style.banner_title}>{ movie?.title || movie?.name || movie?.original_name }</h1>
                 <div className={style.banner_button_wrapper}>

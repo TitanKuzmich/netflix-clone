@@ -24,12 +24,12 @@ const App = () => {
     useEffect(() => {
         unsubscribe()
 
-        return unsubscribe
+        return unsubscribe()
     }, [])
 
     return (
         <div className="app">
-            { !user ? <Login /> : <InitialRouting /> }
+            { user ? <Login /> : <InitialRouting /> }
         </div>
     )
 }

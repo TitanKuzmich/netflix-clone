@@ -19,7 +19,7 @@ const ProfileScreen = () => {
                 <div className={style.profile_screen_info}>
                     <img src={images.Avatar} alt="avatar"/>
                     <div className={style.profile_screen_details}>
-                        <h2>{user.email}</h2>
+                        <h2>{user?.email || "Ti Sai"}</h2>
                         <div className={style.profile_screen_plans}>
                             <h3>Plans</h3>
                             <p></p>
